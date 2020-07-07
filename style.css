@@ -1,0 +1,50 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.top_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+}
+.logo {
+  display: flex;
+  margin: 20px;
+}
+.menu1 {
+  display: flex;
+}
+.menu1 li {
+  list-style: none;
+  padding: 0 1rem;
+}
+.search_menu {
+  display: flex;
+  margin: 20px;
+}
+.search {
+  border-radius: 25px;
+  padding: 8px 12px;
+  background-color: rgb(245, 244, 242);
+}
+.search input {
+  border-style: none;
+  background-color: rgb(245, 244, 242);
+}
+.login1 {
+  display: flex;
+}
+.login1 li {
+  list-style: none;
+  padding: 8px 12px;
+}
+.login1 .create {
+  background-color: rgb(232, 91, 70);
+  border-radius: 25px;
+  color: white;
+}
