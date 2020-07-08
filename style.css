@@ -119,3 +119,30 @@
   width: 50%;
   overflow: hidden;
 }
+
+/* second subsection */
+.second_landing {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.second_subsection {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 72rem;
+  width: 100%;
+  height: 435px;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.profile_pic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.small_intro {
+  width: 50%;
+  font-size: 1.2rem !important;
+}
