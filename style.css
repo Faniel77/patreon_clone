@@ -13,7 +13,7 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
-  font-family: 'Roboto', sans-serif;
+  font-family: aktiv-grotesk, sans-serif;
 }
 
 /* the logo section */
@@ -66,6 +66,16 @@
   justify-content: center;
   height: 618px;
 }
+h1 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+h2 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
 /* the first sub-part */
 .subsection_container {
   display: flex;
@@ -92,14 +102,16 @@
   margin-top: 1rem;
 }
 .brief_intro {
-  font-weight: 400 !important;
-  font-size: 1.15rem !important;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 200 !important;
+  font-size: 1rem !important;
   line-height: 1.5 !important;
 }
 .small_essay {
-  font-weight: 400 !important;
+  font-weight: 200 !important;
   font-size: 1rem !important;
   line-height: 1.5 !important;
+  font-family: aktiv-grotesk, sans-serif;
 }
 /* the small red icon */
 
@@ -112,7 +124,8 @@
   margin-top: 2rem;
   padding: 1rem;
   font-size: 1rem !important;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: aktiv-grotesk, sans-serif;
 }
 /*background image */
 .main_photo {
@@ -125,6 +138,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 6rem;
 }
 .second_subsection {
   display: flex;
@@ -145,4 +159,58 @@
 .small_intro {
   width: 50%;
   font-size: 1.2rem !important;
+}
+.mia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+/* images collection */
+
+.collection_images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.wrapping_images {
+  display: flex;
+  flex-direction: column;
+  /*
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; 
+   */
+  padding-top: 4.5rem;
+  width: 72rem;
+}
+.carrying_images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-right: 1rem;
+  /* 
+  align-items: flex-start;
+  flex-direction: row;
+  */
+}
+.topper {
+  color: rgb(36, 30, 18);
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 700 !important;
+  margin-bottom: 2.5rem;
+}
+
+.flex-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  padding: 10px;
+}
+.sub_flex {
+  margin-bottom: 10px;
+  width: 100%;
 }
