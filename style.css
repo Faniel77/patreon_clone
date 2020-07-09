@@ -7,13 +7,15 @@
 /* navigation bar  */
 
 .top_menu {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  font-family: 'Roboto', sans-serif;
+  font-family: aktiv-grotesk, sans-serif;
+  border-bottom: 1px solid rgb(229, 227, 221);
+  z-index: 1000;
 }
 
 /* the logo section */
@@ -64,7 +66,17 @@
   background-color: rgb(20, 21, 24);
   width: 100%;
   justify-content: center;
-  height: 618px;
+  height: 700px;
+}
+h1 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+h2 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 /* the first sub-part */
 .subsection_container {
@@ -72,6 +84,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 72rem;
+  margin-top: 4rem;
 }
 
 /* contains the heading and the small paragraphs */
@@ -87,19 +100,21 @@
   text-align: left;
   position: relative;
   font-weight: 700 !important;
-  font-size: 2em;
+  font-size: 1.8em;
   margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 4.5rem;
 }
 .brief_intro {
-  font-weight: 400 !important;
-  font-size: 1.15rem !important;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 200 !important;
+  font-size: 1rem !important;
   line-height: 1.5 !important;
 }
 .small_essay {
-  font-weight: 400 !important;
+  font-weight: 200 !important;
   font-size: 1rem !important;
   line-height: 1.5 !important;
+  font-family: aktiv-grotesk, sans-serif;
 }
 /* the small red icon */
 
@@ -112,12 +127,14 @@
   margin-top: 2rem;
   padding: 1rem;
   font-size: 1rem !important;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: aktiv-grotesk, sans-serif;
 }
 /*background image */
 .main_photo {
   width: 50%;
   overflow: hidden;
+  margin-top: 1rem;
 }
 
 /* second subsection */
@@ -125,6 +142,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 6rem;
 }
 .second_subsection {
   display: flex;
@@ -144,5 +162,88 @@
 }
 .small_intro {
   width: 50%;
-  font-size: 1.2rem !important;
+  font-family: Walsheim, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.mia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+/* images collection */
+
+.collection_images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.wrapping_images {
+  display: flex;
+  flex-direction: column;
+  /*
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; 
+   */
+  padding-top: 4.5rem;
+  width: 72rem;
+}
+.carrying_images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-right: 1rem;
+  /* 
+  align-items: flex-start;
+  flex-direction: row;
+  */
+}
+.topper {
+  color: rgb(36, 30, 18);
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 700 !important;
+  margin-bottom: 2.5rem;
+}
+
+.flex-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+}
+.sub_flex {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.flex-items h3 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/*  Footer  */
+
+.container_3 {
+  background-color: rgb(20, 21, 24);
+  color: white;
+  font-family: aktiv-grotesk, sans-serif;
+  font-size: 0.8em;
+  height: 600px;
+  width: 100%;
+}
+.base_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+.base_container li {
+  list-style: none;
+  line-height: 1.5rem;
 }
