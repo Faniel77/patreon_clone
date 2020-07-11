@@ -30,6 +30,7 @@
 .menu1 li {
   list-style: none;
   padding: 8px 12px;
+  cursor: pointer;
 }
 /* section with login and create options */
 
@@ -38,13 +39,15 @@
   margin: 20px;
 }
 .search {
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 8px 12px;
   background-color: rgb(245, 244, 242);
-}
-.search input {
   border-style: none;
-  background-color: rgb(245, 244, 242);
+}
+input {
+  background-color: #f5f4f2;
+  border: none;
+  color: black;
 }
 .login1 {
   display: flex;
@@ -129,6 +132,7 @@ h2 {
   font-size: 1rem !important;
   font-weight: 300;
   font-family: aktiv-grotesk, sans-serif;
+  cursor: pointer;
 }
 /*background image */
 .main_photo {
@@ -236,8 +240,9 @@ h2 {
   color: white;
   font-family: aktiv-grotesk, sans-serif;
   font-size: 0.8em;
-  height: 600px;
+  height: 700px;
   width: 100%;
+  border-bottom: 3rem;
 }
 .base_container {
   display: flex;
@@ -246,6 +251,7 @@ h2 {
   padding: 6rem 2rem 6rem 0.1rem;
   width: 72rem;
   flex-wrap: wrap;
+  border-bottom: 3rem;
 }
 .base_container li {
   list-style: none;
@@ -255,7 +261,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 3rem;
+
   width: 30%;
 }
 .netherlands {
