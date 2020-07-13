@@ -4,6 +4,28 @@
   margin: 0%;
   box-sizing: border-box;
 }
+
+h1 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+h2 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+}
+
 /* navigation bar  */
 
 .top_menu {
@@ -22,27 +44,83 @@
 
 .logo {
   display: flex;
-  margin: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
 }
-.menu1 {
-  display: flex;
-}
-.menu1 li {
-  list-style: none;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-/* section with login and create options */
+/* Menu bar  */
 
-.search_menu {
+.menu-bar {
   display: flex;
-  margin: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: space-around;
+}
+
+.menu-bar li {
+  display: block;
+  margin: 1rem 0.8rem;
+}
+
+.dropdown_one,
+.dropdown_two,
+.dropdown_three {
+  display: none;
+  text-decoration: none;
+}
+
+.dropdown_one ul li a {
+  width: 200px;
+  padding: 1rem 0;
+  font-size: 1rem;
+  display: block;
+}
+
+.dropdown_one p {
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+}
+.menu-bar li:hover > div {
+  display: block;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: rgb(233, 232, 232);
+  color: black;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 0;
+  order: 3;
+}
+
+.login_one {
+  padding: 0.5rem 1rem;
+}
+
+button {
+  background-color: rgb(232, 91, 70);
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.search_one {
+  background-color: #f5f4f2;
+  padding: 15px 15px;
+  border-radius: 18px;
 }
 .search {
-  border-radius: 15px;
-  padding: 8px 12px;
+  width: 250px;
+  position: absolute;
+  right: 230px;
   background-color: rgb(245, 244, 242);
-  border-style: none;
+  border-radius: 18px;
 }
 input {
   background-color: #f5f4f2;
@@ -56,7 +134,7 @@ input {
   list-style: none;
   padding: 8px 12px;
 }
-.login1 .create {
+.login1 .login_patreon {
   background-color: rgb(232, 91, 70);
   border-radius: 25px;
   color: white;
@@ -71,16 +149,7 @@ input {
   justify-content: center;
   height: 700px;
 }
-h1 {
-  font-family: Walsheim, sans-serif;
-  font-weight: 700;
-  font-size: 1.8em;
-}
-h2 {
-  font-family: Walsheim, sans-serif;
-  font-weight: 600;
-  font-size: 1.2em;
-}
+
 /* the first sub-part */
 .subsection_container {
   display: flex;
@@ -189,10 +258,6 @@ h2 {
 .wrapping_images {
   display: flex;
   flex-direction: column;
-  /*
-  padding-left: 2.5rem;
-  padding-right: 2.5rem; 
-   */
   padding-top: 4.5rem;
   width: 72rem;
 }
@@ -201,10 +266,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-right: 1rem;
-  /* 
-  align-items: flex-start;
-  flex-direction: row;
-  */
 }
 .topper {
   color: rgb(36, 30, 18);
@@ -295,19 +356,6 @@ h2 {
   border-radius: 50%;
   text-decoration: none;
 }
-/* prepare for the responsive  */
-
-label {
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  display: none;
-  width: 26px;
-  float: right;
-}
-#toggle {
-  display: none;
-}
 
 /* making the page responsive  */
 
@@ -316,38 +364,55 @@ label {
     position: fixed;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    height: 150px;
+  }
+  .menu-bar {
+    display: none;
   }
   .logo {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .search {
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    left: 25px;
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  /* .logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
     padding: 0 2px;
-  }
-  .menu1 li {
+  } */
+  /* .menu1 li {
     font-size: 8px;
-  }
-  .search_menu {
+  } */
+  /* .search {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     margin: 0 3px;
-  }
-  .login1 {
+  } */
+  /* .login1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .search {
+  } */
+  /* .search {
     display: block;
     width: 100%;
     padding: 3px;
-  }
-  .create {
+  } */
+  /* .login_patreon {
     font-size: 0.8rem;
     padding: 0 2px;
-  }
+  } */
+
   /* first landing */
 
   .subsection_container {
@@ -431,29 +496,33 @@ label {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: start;
     margin-bottom: 2rem;
-    height: 100px;
+    height: 150px;
+  }
+  .menu-bar {
+    display: none;
   }
   .logo {
     display: flex;
     flex-direction: row;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
   }
   .menu1 li {
     font-size: 0.7rem;
   }
-  .search_menu {
+  /* .search_menu {
     display: flex;
     flex-direction: column-reverse;
     padding: 5px;
-  }
+  } */
   .search {
     position: absolute;
     top: 70px;
     right: 20px;
     display: block;
     width: 90%;
-    padding: 4px 7px;
+    padding: 2px 5px;
     margin: auto;
   }
   .create {
