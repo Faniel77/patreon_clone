@@ -32,7 +32,7 @@ li {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0.5rem;
   width: 100%;
   background-color: rgb(255, 255, 255);
   font-family: aktiv-grotesk, sans-serif;
@@ -112,8 +112,9 @@ button {
 
 .search_one {
   background-color: #f5f4f2;
-  padding: 15px 15px;
+  padding: 0.5rem 0.75rem;
   border-radius: 18px;
+  cursor: pointer;
 }
 .search {
   width: 250px;
@@ -121,11 +122,12 @@ button {
   right: 230px;
   background-color: rgb(245, 244, 242);
   border-radius: 18px;
+  margin-top: 0.625rem;
 }
 input {
   background-color: #f5f4f2;
   border: none;
-  color: black;
+  /* color: black; */
 }
 .login1 {
   display: flex;
@@ -171,21 +173,21 @@ input {
 .page_title {
   text-align: left;
   position: relative;
-  font-weight: 700 !important;
+  font-weight: 700;
   font-size: 1.8em;
   margin-bottom: 1.5rem;
   margin-top: 4.5rem;
 }
 .brief_intro {
   font-family: aktiv-grotesk, sans-serif;
-  font-weight: 200 !important;
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .small_essay {
-  font-weight: 200 !important;
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5;
   font-family: aktiv-grotesk, sans-serif;
 }
 /* the small red icon */
@@ -194,11 +196,11 @@ input {
   background-color: rgb(232, 91, 70);
   border-radius: 25px;
   color: white;
-  max-width: 40%;
+  width: 40%;
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
-  font-size: 1rem !important;
+  font-size: 1rem;
   font-weight: 300;
   font-family: aktiv-grotesk, sans-serif;
   cursor: pointer;
@@ -382,36 +384,6 @@ input {
     display: block;
     margin: auto;
   }
-  /* .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 0 2px;
-  } */
-  /* .menu1 li {
-    font-size: 8px;
-  } */
-  /* .search {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 0 3px;
-  } */
-  /* .login1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  } */
-  /* .search {
-    display: block;
-    width: 100%;
-    padding: 3px;
-  } */
-  /* .login_patreon {
-    font-size: 0.8rem;
-    padding: 0 2px;
-  } */
 
   /* first landing */
 
@@ -450,8 +422,9 @@ input {
     font-size: 1rem;
   }
   .create2 {
-    width: 50%;
-    text-align: left;
+    width: 100%;
+    align-self: center;
+    /* text-align: left; */
     font-size: 1rem;
   }
   .main_photo {
@@ -511,11 +484,7 @@ input {
   .menu1 li {
     font-size: 0.7rem;
   }
-  /* .search_menu {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 5px;
-  } */
+
   .search {
     position: absolute;
     top: 70px;
